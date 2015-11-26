@@ -1,0 +1,42 @@
+ <!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+	<meta charset="utf-8" />
+	<title>Тензор тестовое задание</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/jquery-2.1.1.js"></script>
+	
+</head>
+<body>
+	<div class="boxtext">
+		<input class="toggle-box" id="identifier-1" type="checkbox" >
+		<label for="identifier-1">Нажмите здесь, чтобы узнать подробнее <strong> про сортировку пузырьком</strong>!</label>
+		<div>
+			<span class="subHeading"> <p>Сортировка простыми обменами, сортиро́вка пузырько́м (<i>англ. bubble sort</i>)</p> </span>
+			<span class="content"> <p>Алгоритм состоит из повторяющихся проходов по сортируемому массиву. За каждый проход элементы последовательно сравниваются попарно и, если порядок в паре неверный, выполняется обмен элементов. Проходы по массиву повторяются N-1 раз или до тех пор, пока на очередном проходе не окажется, что обмены больше не нужны, что означает — массив отсортирован. При каждом проходе алгоритма по внутреннему циклу, очередной наибольший элемент массива ставится на своё место в конце массива рядом с предыдущим «наибольшим элементом», а наименьший элемент перемещается на одну позицию к началу массива («всплывает» до нужной позиции как пузырёк в воде, отсюда и название алгоритма).</p> </span>
+		</div>
+	</div>
+	
+	<canvas id="flying-bubbles"><span style="color:red">Ваш браузер не поддерживает HTML5 Canvas</span></canvas>
+	<script src="js/index.js"></script>
+	
+	<script type="text/javascript">
+		(function(){
+		if(typeof ({}.__defineGetter__) != "function" && typeof (Object.defineProperty) != "function")
+		  alert("Ваш браузер не поддерживает необходимую версию JavaScript");})()
+	</script>
+	<form action="" method=post class="form">
+		<fieldset>
+			<button class="btnSmall" type="submit">
+				<span>Сгенерировать новые данные для сортировки</span>
+			</button>
+		</fieldset>
+	</form>
+	<footer id="footer">
+		<div class="center">
+			<span class="copy">Copyright <a href="http://brainstorage.me/leonid_niko">leonid_niko</a></span>
+		</div>
+	</footer>
+
+</body>
+</html>
